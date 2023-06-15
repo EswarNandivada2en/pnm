@@ -11,6 +11,7 @@ app.config['SESSION_TYPE']='filesystem'
 mydb=mysql.connector.connect(host="localhost",user="root",password="admin",db="pnm")
 @app.route('/')
 def index():
+    #print('hello')
     return render_template('title.html')
 @app.route('/login',methods=['GET','POST'])
 def login():
